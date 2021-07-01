@@ -18,3 +18,25 @@ for (let i = 1; i < array.length; i++) {
 }
 
 */
+
+// Econtrar o menor valor
+
+const array2 = [1, 2, 3, 10, 7, 5];
+
+let maior = array2[0];
+
+for (let i = 1; i < array2.length; i++) {
+    let item = array2[i];
+
+    if (item > maior) {
+        maior = item;
+    }
+}
+
+console.log(maior);
+
+// Utilizando o reduce()
+
+const maiorComReduce = array2.reduce((acc, item) => item > acc ? item : acc);
+
+console.log(maiorComReduce);
